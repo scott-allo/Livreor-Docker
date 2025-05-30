@@ -1,5 +1,11 @@
 # 📖 Livre d'or - Mariage de Anne & Brad
 
+## DOCKER
+Pour lancer le conteneur :
+
+docker-compose up --build
+
+
 ## 📝 Description
 
 Ce projet est un livre d'or permettant aux utilisateurs de laisser leurs avis et messages sur le mariage fictif de **Anne et Brad**. Cette idée humoristique fait référence à l'histoire d'Anne, une femme qui a été arnaquée par un individu se faisant passer pour Brad Pitt. Nous avons décidé d'ajouter cette touche légère et décalée à notre projet. 😆
