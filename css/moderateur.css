@@ -1,0 +1,189 @@
+/* VARIABLES MODERNES */
+:root {
+  --beige-creme: #f8f5f2;
+  --taupe-doux: #e3ded9;
+  --terracotta: #c17c74;
+  --gris-chaud: #6d6a6f;
+  --poudre: #eee6e1;
+  --ombre-douce: rgba(109, 106, 111, 0.1);
+}
+
+/* RESET ÉLÉGANT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: var(--beige-creme);
+  color: var(--gris-chaud);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* NAVIGATION MINIMALISTE */
+nav {
+  background: var(--beige-creme);
+  padding: 1.5rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 20px var(--ombre-douce);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--gris-chaud);
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--terracotta);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* CONTENU PRINCIPAL */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 3rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px var(--ombre-douce);
+}
+
+h1 {
+  color: var(--gris-chaud);
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+/* TABLEAU ÉLÉGANT */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 2rem 0;
+}
+
+thead {
+  border-bottom: 2px solid var(--taupe-doux);
+}
+
+th {
+  padding: 1.2rem;
+  color: var(--gris-chaud);
+  font-weight: 400;
+  text-align: left;
+}
+
+td {
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--taupe-doux);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: var(--poudre);
+}
+
+/* BOUTONS RAFFINÉS */
+button {
+  background: var(--terracotta);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(193, 124, 116, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* MESSAGES DÉLICATS */
+.success-message {
+  background: rgba(193, 124, 116, 0.1);
+  color: var(--terracotta);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--terracotta);
+}
+
+.confirmation-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px var(--ombre-douce);
+  margin: 2rem 0;
+}
+
+.confirm-btn {
+  background: var(--terracotta);
+  color: white;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: var(--gris-chaud);
+  border: 1px solid var(--taupe-doux);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 2rem;
+    margin: 80px 1rem 2rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:wght@400;500&display=swap");

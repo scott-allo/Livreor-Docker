@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/rkq5tdm.css");
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%; /* Réduit la largeur */
+  max-width: 400px; /* Taille plus petite */
+  margin: 50px auto; /* Ajustement du centrage */
+  padding: 30px; /* Moins d'espace */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 100px;
+ 
+}
+
+/* Style du titre */
+.profil h1 {
+  font-size: 24px; /* Légèrement réduit */
+  font-weight: bold;
+  color: #fc9191;;
+  margin-bottom: 15px;
+}
+
+/* Style des labels */
+.profil label {
+  font-size: 16px; /* Réduction de la taille */
+  font-weight: bold;
+  color: #fc9191;;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Champs de saisie */
+.profil input {
+  font-size: 14px; /* Un peu plus petit */
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+/* Style du bouton */
+.profil button {
+  font-size: 16px; /* Taille réduite */
+  padding: 10px 15px;
+  background-color: #fc9191;;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.profil button:hover {
+  background-color: #d57c7c;
+  transform: scale(1.03);
+}
+
+/* Message de confirmation ou d'erreur */
+.profil p {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
